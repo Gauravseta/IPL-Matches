@@ -17,9 +17,9 @@ Note: Search Feature is added to search the items from current page items
 1. Configure Tomcat on your local machine to run on <port>
 2. paste this folder in "webapps" directory of tomcat folder.
 3. After copying the folder to "webapps" directory of tomcat folder, test the project visually.
-4. Hit the url "http://localhost:<port>/IPLProject/index.html".
+4. Hit the url "http://localhost:<port>/IPL-Matches/index.html".
 		Example:
-		"http://localost:8080/IPLProject/index.html"
+		"http://localost:8080/IPL-Matches/index.html"
 
 
 
@@ -28,17 +28,6 @@ Note: Search Feature is added to search the items from current page items
 
 
 
-
-************* Known Issues ********************************
-
-1.Live Match Section is confusing to me hence did not simulated anything.
-  A section for Live Match is given on top, but I am confused where to bring data for Live match.
-  Given the csv files, have tried to make full use of it.
-2.Due to Time limitation,Look of the ui may not be good, but has tried to improvise as much possible.
-3.Many texts which shall be bold are not made bold as concentration is much given to angular Coding and best practises.
-4.Match Details Page does not show all fields of Object only few are made to render on UI.
-5.Identation may not be proper due to IDE mismatch.Request to ignore at few, though atmost care is taken.
-6.On Match details, after clicking innings button, button is not highlighted to let user know which button is clicked.
 
 
 
