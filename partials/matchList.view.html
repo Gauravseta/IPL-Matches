@@ -1,0 +1,34 @@
+<div class="ipl-liveMatch-section">
+	<div class="ipl-liveMatch-header">LIVE MATCH</div>
+</div>
+
+<div class="ipl-pastMatch-section">
+	<div class="ipl-pastMatch-header">Past Matches</div>
+
+	<div  class="ipl-pastMatch-body">
+		<div>
+		<span>Search</span><input type="text" value="search" ng-model="searchKeyword"></input>
+		<div ng-repeat="match in matches.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage)) | filter: searchKeyword" ng-click="goToMatchDetails($index,match)" class="ipl-pastMatch-content">
+			<div class="row">
+				<div class="col-xs-10" class="ipl-textAlign-left" >
+					<span>{{match.id}}</span>
+					<div>				
+					{{match.team1}} V/s {{match.team2}},{{match.season}}
+					<br>
+					Venue : {{match.venue}}
+					</div>
+				</div>
+				<div class="col-xs-2" class="ipl-textAlign-left">Win:{{match.winner}}</div>
+			</div>
+		</div>
+		
+		</div>
+		<pagination 
+		      ng-model="currentPage"
+		      total-items="totalIplMatches"
+			items-per-page="itemsPerPage"
+			max-size="maxSize" 
+		      boundary-links="true">
+		 </pagination>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+<div  class="ipl-matchDetails-section">
+	<div>MATCH DETAILS</div>
+	<br>
+	<div><span>{{matchObj.team1}} V/s {{matchObj.team2}}</span></div>
+	<div><span>{{matchObj.city}}, {{matchObj.season}}</span></div>
+	<div>Winner: {{matchObj.winner}} </div>
+</div>
+<div class="ipl-overDetails-section" >
+	<div style="">Over Details</div>
+	<button type="button" ui-sref=".team1" class="btn btn-primary">{{matchObj.team1}} Innings</button>
+	<button type="button" ui-sref=".team2" class="btn btn-primary">{{matchObj.team2}} Innings</button>
+	<button type="button" ng-click="goBack()" class="btn btn-primary">Cancel</button>
+</div>
+<div ng-show="isDataLoading" class="ipl-text-align-center">
+	Wait Data loading
+</div>
+<div ng-show="isDataLoaded" ui-view></div>

@@ -1,0 +1,25 @@
+<div class="ipl-matchDetails-teamInnings">
+
+	<div ng-repeat="delivery in deliveries.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))" class="ipl-eachBowl-content">
+			<div class="row" style="padding-left:10px">
+				<div class="col-xs-4">Over {{delivery.over-1}}.{{delivery.ball}}, {{delivery.total_runs}} runs</div>
+				<div class="col-xs-8">
+				<div>Bowler: {{delivery.bowler}}</div>
+				<div>Batsman: {{delivery.batsman}}</div>
+				<div>Non-Striker: {{delivery.non_striker}}</div>
+				</div>
+				
+			</div>
+
+		
+	</div>
+	<div class="ipl-text-align-center">
+	<pagination 
+		      ng-model="currentPage"
+		      total-items="totalTeam1Deliveries"
+			items-per-page="itemsPerPage"
+		      max-size="maxSize" 
+		      boundary-links="true">
+	</pagination>
+	</div>
+</div>

@@ -1,0 +1,76 @@
+	.ipl-liveMatch-section {
+		background-color:#322955;
+		padding:20px 1px;
+		text-align:center;	
+	}
+
+	.ipl-liveMatch-header {
+		color:#8E8AA2;
+	}
+
+	.ipl-pastMatch-section {
+		background-color:#D4E0E6;
+		padding:10px 20px;
+	}
+
+
+	.ipl-pastMatch-header {
+		margin-left:5px;
+	}
+
+	.ipl-textAlign-left {
+		text-align:left;
+	}
+
+	.ipl-paddingLeft-30{
+		   padding-left: 30px;
+	}
+	
+	.ipl-pastMatch-content {
+		list-style-type:none;
+		background-color:white;
+		padding:5px 0px;
+		margin-bottom:3px;
+		 cursor: pointer;
+		padding-left:10px;
+	}
+	
+	.ipl-pastMatch-body {
+		background-color:#E3EDF2;
+		margin-top:20px;
+	}
+
+	.ipl-matchDetails-section {
+		background-color:#322955;
+                padding:20px 1px;
+                text-align:center;
+                color:#8E8AA2	
+	}
+
+	.ipl-text-align-center {
+		text-align:center;
+	}
+
+	.ipl-overDetails-section {
+		background-color:#D4E0E6;
+		padding:10px 20px;	
+	}
+
+	.ipl-matchDetails-teamInnings {
+		background-color:#E3EDF2;
+		padding:10px 10px;	
+	}
+
+	.ipl-eachBowl-content {
+		list-style-type:none;
+		background-color:white;
+		padding:5px 0px;
+		margin-bottom:3px;
+		 cursor: pointer;	
+	}
+
+
+
+
+
+	
